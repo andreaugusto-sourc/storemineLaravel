@@ -1,0 +1,224 @@
+@media (max-width:1000px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:900px) {
+    html {
+        font-size: 50%;
+    }
+    
+}
+
+@media (max-width:768px) {
+    /*  GERAIS */
+    html{
+        font-size: 45%;
+    }
+    /* HEADER */
+    header{
+        margin-bottom: 1%;
+    }
+    nav{
+        display:none;
+    }
+    .one,.two,.three{
+        background-color: black;
+        height:5px;
+        width:100%;
+        margin: 6px auto;
+        transition-duration:0.3s ;
+    }
+    .menu-toggle{
+        width:35px;
+        height:30px;
+        
+    }
+    .menu-section.on{
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: whitesmoke;
+        width:100vw;
+        z-index: 10;
+        text-align: center;
+    }
+    .menu-section.on nav{
+        display: block;
+      
+    }
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 20px;
+        top:20px;
+        
+    }
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 9px);
+    }
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(7px, -9px);
+    }
+    nav{
+        border-bottom: 0.5rem solid black;
+        background-color:var(--cor1);
+        width: 100%
+    }
+    nav li{
+        padding: 0.5rem;
+        transition: 250ms linear 0s;
+        margin: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+    }
+    .imagens-link{
+        width: 19%;
+    }
+    li a{
+        text-align: center;
+        transition-duration:0.5s ;
+        font-size: 2.5rem;
+        width: 200px;
+    }
+    #logo-texto{
+        padding: 0;
+    }
+    #input-pesquisa{
+        width: 27vw;
+    }
+    .icon-pesquisa{
+        font-size: unset;
+    }
+
+     /* PÁGINA PRODUTO */
+    #produto-box{
+        flex-direction: column;
+    }
+    #info-produto{
+        padding: 0;
+        width: 100%;
+    }
+    #imagens-produto{
+        width: 100%;
+    }
+    #imagem-principal{
+        height: 50%;
+    }
+    .imagens-secundarias{
+       display: none;
+             
+    }
+    h3{
+       font-size: 2rem;
+    }
+    #imagem-decorativa{
+       width: 25%;
+    }
+    #enter{
+       width: 22vw;
+    }
+    p{
+       margin-top: 0;
+    }
+    /* PÁGINA CARRINHO */
+    #caixa-carrinho{
+        flex-direction: column;
+        align-items: center;
+     }
+    #resumo-pedido{
+        width: 40%;
+     }
+
+  
+
+}
+@media (max-width:550px) {
+   /* GERAIS */
+    html{
+        font-size: 40%;
+    }
+    .container{
+        max-width: none;
+        width: 100%;
+    }
+    /* HEADER */
+    ul{
+        font-size: 1.4rem;
+    }
+    #input-pesquisa{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    /* INDEX*/
+    .caixa-produtos{
+        flex-direction: column;
+    }
+    .produto{
+        margin: auto;
+        padding-top: 1rem;
+        border: none;
+        border-bottom: gray 0.1px solid;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .info-mobile{
+        width: 45vw;
+        text-align: center;
+        
+    }
+    .img-produto{
+        height: 180px;
+        width: 100%;
+        max-width:145px;
+    }
+    .nome-produto{
+        font-size: 2.5rem;
+        max-height: none;
+        max-width: 120px;
+    }
+    .preco-produto{
+        min-height: 10px;
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 4rem;
+    }
+     /* PÁGINA CARRINHO */
+     #comprarMais{
+         width: 36vw;
+     }
+
+    /* FOOTER */
+    footer{
+        margin-top: 0;
+        width: 100%;
+        border-top: var(--cor3) 0.5rem solid;
+    }
+    .item-rodape{
+        padding:2rem;
+        text-align:center;
+        width:100%;
+    }
+    /* PÁGINA FINALIZAR */
+
+    
+
+}
+@media (max-width:320px) {
+    html{
+        font-size: 25%;
+    }
+    ul{
+        font-size: 1.2rem;
+    }
+
+}
+
