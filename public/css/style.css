@@ -52,10 +52,11 @@ header a {
 
 .logo {
     width: 10%;
+    min-width: 50px;
 }
 
 .logo-texto {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--verde);
 }
 
@@ -68,7 +69,9 @@ span {
     width: 21vw;
     padding: 1.5rem;
 }
-
+#input-pesquisa::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .icon-pesquisa {
     border: none;
     color: #fff;
@@ -79,6 +82,7 @@ span {
 .imagens-link {
     display: block;
     width: 5vw;
+    min-width: 50px;
 }
 
 /* HAMBURGUER */
@@ -188,7 +192,7 @@ footer {
 .item-rodape {
     color: #000;
     text-decoration: none;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 1.5rem 4rem 1.5rem 4rem;
 }
 /* FORMS */
 .form{
