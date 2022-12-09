@@ -14,13 +14,13 @@
 <body>
 <div class="container">
 
-<header class="d-flex flex-column w-100">
+<header class="d-flex flex-column">
 
 <div class="navbar">
     
     <img src="/images/logo.png" class="logo p-1">
 
-    <a href="/" class="logo-texto p-1" translate="no"><span>Store</span>Mine</a>
+    <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
 
     <form action="/" method="get">
     <div class="d-flex">
@@ -39,9 +39,9 @@
 
         <nav>
             
-        <li><img src="/images/carrinho.png" class="imagens-link p-1"> <a href="">Carrinho</a></li>
+        <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="">Carrinho</a></li>
 
-        <li><img src="/images/cadastro.png" class="imagens-link p-1"> <a href="">Cadastro</a></li>
+        <li><img src="/images/cadastro.png" class="imagens-link p-2"> <a href="">Cadastro</a></li>
 
         </nav>
    
@@ -62,20 +62,20 @@
     
 </div>
 
-<footer>
+<footer class="d-flex align-items-center justify-content-evenly">
 
-<div id="caminhos-footer">
-    <a href="" class="item-rodape">Sobre</a>
-    <a href="" class="item-rodape">Contato</a>
-    <a href="" class="item-rodape">Privacidade</a>
-    <a href="dashboard" class="item-rodape">Administração</a>
+<div class="d-flex flex-column justify-end align-items-center">
+    <a href="" class="item-rodape text-dark">Sobre</a>
+    <a href="" class="item-rodape text-dark">Contato</a>
+    <a href="" class="item-rodape text-dark">Privacidade</a>
+    <a href="dashboard" class="item-rodape text-dark">Administração</a>
 </div>
 
-<div id="redes-sociais">
-    <a>"Nosso" instagram:</a>
-    <a href="https://www.instagram.com/andremartins1033/"> <ion-icon class="redes-icons" name="logo-instagram"></ion-icon> </a>
-    <a>Acesse o projeto:</a>
-    <a href="https://github.com/andreaugusto-sourc/storemine"> <ion-icon class="redes-icons" name="logo-github"></ion-icon> </a>
+<div class="d-flex flex-column justify-around align-items-center">
+    <a class="text-center text-dark">"Nosso" instagram:</a>
+    <a href="https://www.instagram.com/andremartins1033/"> <ion-icon class="icons text-dark" name="logo-instagram"></ion-icon> </a>
+    <a class="text-center text-dark">Acesse o projeto:</a>
+    <a href="https://github.com/andreaugusto-sourc/storemine"> <ion-icon class="icons text-dark" name="logo-github"></ion-icon> </a>
 </div>
 
 </footer>

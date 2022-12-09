@@ -94,8 +94,8 @@ nav {
 
 nav li {
     padding: 0.5rem;
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 /* SEGUNDA PARTE DO HEADER */
@@ -154,43 +154,16 @@ ul {
 footer {
     padding: 0.5rem 0rem;
     font-size: 1.8rem;
-    margin-top: 2%;
-    display: flex;
     border-top: var(--preto) 0.2rem solid;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
 
 }
 
-#redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#redes-sociais a {
-    color: #000;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.redes-icons {
-    padding: 1rem;
-    color: #000;
+footer .icons {
+    padding: 1rem 0;
     font-size: 5rem;
 }
 
-#caminhos-footer {
-    flex-direction: column;
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
-}
-
 .item-rodape {
-    color: #000;
     text-decoration: none;
     padding: 1.5rem 4rem 1.5rem 4rem;
 }

@@ -12,9 +12,12 @@ class ProdutoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $produtos = Produto::all();
+        if(request("busca")){
+            $produtos = Produto::where('nome', 'like', '%'.request('busca').'%')->get();
+        }
         return view('produtos.index',['produtos' => $produtos]);
         //
     }
