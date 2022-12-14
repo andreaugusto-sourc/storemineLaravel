@@ -19,7 +19,7 @@ span {
 }
 #input-pesquisa {
     font-size: 1.2rem;
-    width: 22vw;
+    width: 24vw;
     padding: 1.2vw;
 }
 #input-pesquisa::placeholder{
@@ -33,6 +33,7 @@ span {
 }
 
 .imagens-link {
+    margin: 0.5rem;
     display: block;
     width: 5vw;
     min-width: 50px;
@@ -46,7 +47,6 @@ nav {
 }
 
 nav li {
-    padding: 0.5rem;
     display: flex;
     align-items: center;
 }

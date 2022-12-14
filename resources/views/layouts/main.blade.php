@@ -16,14 +16,14 @@
 
 <header class="d-flex flex-column">
 
-<div class="navbar d-flex justify-content-evenly align-items-center fs-3">
+<div class="navbar d-flex justify-content-around align-items-center fs-3">
     
     <img src="/images/logo.png" class="logo">
 
-    <article class="logo-texto" translate="no"><span>Store</span>Mine</article>
+    <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
 
     <form action="/" method="get">
-    <div class="d-flex">
+    <div class="pesquisa d-flex">
     <input type="search" name="busca" id="input-pesquisa" placeholder="O que você está procurando?">
     <button class="icon-pesquisa" type="submit"><ion-icon name="search-outline"></ion-icon></button>
     </div>
@@ -49,7 +49,7 @@
 
 </div>
 
-<ul class="d-flex justify-content-around fs-4">
+<ul class="d-flex justify-content-around fs-3">
     <li class="item-ul">Roupas</li>
     <li class="item-ul">Pelúcias</li>
     <li class="item-ul">Acessórios</li>

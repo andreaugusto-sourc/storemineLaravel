@@ -1,14 +1,14 @@
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
+    /*  GERAIS */
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:768px) {
     /*  GERAIS */
     html{
         font-size: 45%;
-    }
-}
-@media (max-width:700px) {
-    /*  GERAIS */
-    html{
-        font-size: 40%;
     }
     /* HEADER */
     nav{
@@ -36,8 +36,8 @@
     }
     .menu-section.on .menu-toggle {
         position: absolute;
-        right: 10%;
-        top: 40%;
+        right: 5%;
+        top: 20%;
     }
     .menu-section.on .menu-toggle .one{
         transform: rotate(45deg) translate(4px, 9px);
