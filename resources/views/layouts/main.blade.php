@@ -16,11 +16,11 @@
 
 <header class="d-flex flex-column">
 
-<div class="navbar">
+<div class="navbar d-flex justify-content-evenly align-items-center fs-3">
     
-    <img src="/images/logo.png" class="logo p-1">
+    <img src="/images/logo.png" class="logo">
 
-    <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
+    <article class="logo-texto" translate="no"><span>Store</span>Mine</article>
 
     <form action="/" method="get">
     <div class="d-flex">
@@ -49,7 +49,7 @@
 
 </div>
 
-<ul>
+<ul class="d-flex justify-content-around fs-4">
     <li class="item-ul">Roupas</li>
     <li class="item-ul">Pelúcias</li>
     <li class="item-ul">Acessórios</li>
@@ -62,20 +62,20 @@
     
 </div>
 
-<footer class="d-flex align-items-center justify-content-evenly">
+<footer class="d-flex align-items-center justify-content-evenly border-top border-dark fs-3 p-4">
 
-<div class="d-flex flex-column justify-end align-items-center">
-    <a href="" class="item-rodape text-dark">Sobre</a>
-    <a href="" class="item-rodape text-dark">Contato</a>
-    <a href="" class="item-rodape text-dark">Privacidade</a>
-    <a href="dashboard" class="item-rodape text-dark">Administração</a>
+<div class="d-flex flex-column align-items-center">
+    <a href="" class="text-dark p-3">Sobre</a>
+    <a href="" class="text-dark p-3">Contato</a>
+    <a href="" class="text-dark p-3">Privacidade</a>
+    <a href="dashboard" class="text-dark p-3">Administração</a>
 </div>
 
 <div class="d-flex flex-column justify-around align-items-center">
-    <a class="text-center text-dark">"Nosso" instagram:</a>
+    <a class="text-center text-dark p-2">"Nosso" instagram:</a>
     <a href="https://www.instagram.com/andremartins1033/"> <ion-icon class="icons text-dark" name="logo-instagram"></ion-icon> </a>
-    <a class="text-center text-dark">Acesse o projeto:</a>
-    <a href="https://github.com/andreaugusto-sourc/storemine"> <ion-icon class="icons text-dark" name="logo-github"></ion-icon> </a>
+    <a class="text-center text-dark p-2">Acesse o projeto:</a>
+    <a href="https://github.com/andreaugusto-sourc/storemineLaravel"> <ion-icon class="icons text-dark" name="logo-github"></ion-icon> </a>
 </div>
 
 </footer>

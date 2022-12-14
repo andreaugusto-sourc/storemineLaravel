@@ -1,73 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-html {
-    font-size: 62.5%;
-}
-
-:root {
-    --verde: rgb(136, 201, 38);
-    --branco: rgb(245, 243, 243);
-    --marrom: rgb(172, 89, 30);
-    --preto: rgb(46, 45, 45);
-    --azul: rgb(68, 220, 220);
-}
-
-body {
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    font-family: 'Russo One', sans-serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: var(--branco);
-}
-
-.container {
-    width: 95%;
-    max-width: 1224px;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
 header {
     background-color: var(--branco);
-    z-index: 11;
 }
 
 header a {
     display: block;
     color: black;
 }
-
-.navbar {
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .logo {
     width: 10%;
-    min-width: 50px;
+    min-width: 60px;
 }
-
 .logo-texto {
     font-size: 3rem;
     color: var(--verde);
 }
-
 span {
     color: var(--marrom);
 }
-
 #input-pesquisa {
-    font-size: 1.3rem;
-    width: 21vw;
-    padding: 1.5rem;
+    font-size: 1.2rem;
+    width: 22vw;
+    padding: 1.2vw;
 }
 #input-pesquisa::placeholder{
     font-family: Arial, Helvetica, sans-serif;
@@ -100,50 +53,23 @@ nav li {
 
 /* SEGUNDA PARTE DO HEADER */
 ul {
+    margin: 0;
     padding: 2rem 3rem;
-    justify-content: space-around;
-    display: flex;
     background-color: var(--verde);
     list-style: none;
 }
-
 .item-ul {
-    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
 }
 
 /* ESTRUTURA PRODUTOS */
-.caixa-produtos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.produto {
-    border: double gray 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 25vw;
-    margin: 2rem 0rem;
-}
-
-.nome-produto {
-    height: 5vh;
-    color: black;
-    font-size: 2.5rem;
-    margin: 1.2rem 0rem 1.2rem 0rem;
-    text-decoration: underline;
-}
-
 .preco-produto {
     color: var(--branco);
     font-size: 2.5rem;
     min-height: 40px;
     background-color: var(--verde);
 }
-
 .img-produto {
     object-fit: cover;
     max-width: 100%;
@@ -151,39 +77,6 @@ ul {
 }
 
 /* FOOTER */
-footer {
-    padding: 0.5rem 0rem;
-    font-size: 1.8rem;
-    border-top: var(--preto) 0.2rem solid;
-
-}
-
 footer .icons {
-    padding: 1rem 0;
     font-size: 5rem;
-}
-
-.item-rodape {
-    text-decoration: none;
-    padding: 1.5rem 4rem 1.5rem 4rem;
-}
-/* FORMS */
-.form{
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.form h1{
-    text-align: center;
-}
-.form input,.form select{
-   margin-bottom: 20px;
-   height: 35px; 
-   font-size: 1.6rem;
-}
-.btn{
-    font-size: 2rem;
 }

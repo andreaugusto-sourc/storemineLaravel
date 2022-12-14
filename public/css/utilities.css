@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* CORES DO SITE */
+:root {
+    --verde: rgb(136, 201, 38);
+    --branco: rgb(245, 243, 243);
+    --marrom: rgb(172, 89, 30);
+    --preto: rgb(46, 45, 45);
+    --azul: rgb(68, 220, 220);
+}
+/* GERAIS*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--branco);
+}
+
+.container {
+    width: 95%;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
+/* FORMULARIOS */
+.form{
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form h1{
+    text-align: center;
+}
+.form input,.form select{
+   margin-bottom: 20px;
+   height: 35px; 
+   font-size: 1.6rem;
+}
+/* BOTÕES */
+.btn{
+    font-size: 2rem;
+}
+/* HYPERLINLS */
+a {
+    text-decoration: none;
+}
