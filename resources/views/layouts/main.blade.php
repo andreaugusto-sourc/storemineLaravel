@@ -16,45 +16,45 @@
 
 <header class="d-flex flex-column">
 
-<div class="navbar d-flex justify-content-around align-items-center fs-3">
+    <div class="navbar d-flex justify-content-around align-items-center fs-3">
+        
+        <img src="/images/logo.png" class="logo">
+
+        <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
+
+        <form action="/" method="get">
+        <div class="pesquisa d-flex">
+        <input type="search" name="busca" id="input-pesquisa" placeholder="O que você está procurando?">
+        <button class="icon-pesquisa" type="submit"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+        </form>
+
+        <div class="menu-section">    
+
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <nav>
+                
+            <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="">Carrinho</a></li>
+
+            <li><img src="/images/cadastro.png" class="imagens-link p-2"> <a href="">Cadastro</a></li>
+
+            </nav>
     
-    <img src="/images/logo.png" class="logo">
-
-    <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
-
-    <form action="/" method="get">
-    <div class="pesquisa d-flex">
-    <input type="search" name="busca" id="input-pesquisa" placeholder="O que você está procurando?">
-    <button class="icon-pesquisa" type="submit"><ion-icon name="search-outline"></ion-icon></button>
-    </div>
-    </form>
-
-    <div class="menu-section">    
-
-        <div class="menu-toggle">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
         </div>
 
-        <nav>
-            
-        <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="">Carrinho</a></li>
-
-        <li><img src="/images/cadastro.png" class="imagens-link p-2"> <a href="">Cadastro</a></li>
-
-        </nav>
-   
     </div>
 
-</div>
-
-<ul class="d-flex justify-content-around fs-3">
-    <li class="item-ul">Roupas</li>
-    <li class="item-ul">Pelúcias</li>
-    <li class="item-ul">Acessórios</li>
-    <li class="item-ul">Diversos</li>
-</ul>
+    <ul class="d-flex justify-content-around fs-3">
+        <li class="item-ul">Roupas</li>
+        <li class="item-ul">Pelúcias</li>
+        <li class="item-ul">Acessórios</li>
+        <li class="item-ul">Diversos</li>
+    </ul>
 
 </header>
 
