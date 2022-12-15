@@ -50,10 +50,10 @@
     </div>
 
     <ul class="d-flex justify-content-around fs-3">
-        <li class="item-ul">Roupas</li>
-        <li class="item-ul">Pelúcias</li>
-        <li class="item-ul">Acessórios</li>
-        <li class="item-ul">Diversos</li>
+        <a href="" class="item-ul">Roupas</a>
+        <a href="" class="item-ul">Pelúcias</a>
+        <a href="" class="item-ul">Acessórios</a>
+        <a href="" class="item-ul">Diversos</a>
     </ul>
 
 </header>

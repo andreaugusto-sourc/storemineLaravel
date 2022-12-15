@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 /* CORES DO SITE */
 :root {
-    --verde: rgb(136, 201, 38);
+    --verde: #63d459;
     --branco: rgb(245, 243, 243);
     --marrom: rgb(172, 89, 30);
     --preto: rgb(46, 45, 45);
@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-    width: 95%;
     max-width: 1224px;
     margin: 0 auto;
 }
@@ -40,7 +39,7 @@ body {
 .form h1{
     text-align: center;
 }
-.form input,.form select{
+.form input, select{
    margin-bottom: 20px;
    height: 35px; 
    font-size: 1.6rem;
