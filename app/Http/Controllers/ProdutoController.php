@@ -56,8 +56,10 @@ class ProdutoController extends Controller
      */
     public function show($id)
     {
+        $Produto = Produto::findOrFail($id);
         return view('produtos.show', [
-            'produto' => Produto::findOrFail($id)
+            'produto' => $Produto,
+            'categoria' => Categoria::findOrFail($Produto->idCategoria),
         ]);
     }
 

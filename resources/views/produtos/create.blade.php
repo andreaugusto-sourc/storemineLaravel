@@ -17,7 +17,7 @@
     <input class="form-control" type="number" id="preco" name="preco">
     <label for="estoque">Estoque:</label>
     <input class="form-control" type="number" id="estoque" name="estoque">
-    <select class="form-select" name="idCategoria" id="idCategoria">
+    <select name="idCategoria" id="idCategoria">
         @foreach ($categorias as $categoria)
             <option>{{$categoria->id}} - {{$categoria->nome}}</option>
         @endforeach
