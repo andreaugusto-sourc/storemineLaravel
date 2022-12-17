@@ -20,6 +20,7 @@ return new class extends Migration
             $table->binary('imagem');
             $table->decimal('preco',6,2);
             $table->integer('estoque');
+            $table->enum('ativo',['Sim',"Não"]);
             $table->unsignedBigInteger('idCategoria');
             $table->foreign('idCategoria')->references('id')->on('categorias');
             $table->timestamps();

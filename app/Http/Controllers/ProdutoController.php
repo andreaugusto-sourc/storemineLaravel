@@ -14,7 +14,7 @@ class ProdutoController extends Controller
      */
     public function index(Request $request)
     {
-        $produtos = Produto::all();
+        $produtos = Produto::where(['ativo'=>"Sim"])->get();
         if(request("busca")){
             $produtos = Produto::where('nome', 'like', '%'.request('busca').'%')->get();
         }
@@ -91,6 +91,7 @@ class ProdutoController extends Controller
             "descricao" => $request->descricao,
             "imagem" => Produto::uploadImagem($request),
             "preco" => $request->preco,
+            'ativo' => $request->ativo,
             "estoque" => $request->estoque,
             "idCategoria" => preg_replace("/[A-Za-z\-]+/","",$request->idCategoria) 
         ];

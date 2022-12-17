@@ -15,6 +15,11 @@
     <input class="form-control" type="file" id="imagem" name="imagem">
     <label for="preco">Preço:</label>
     <input class="form-control" type="number" id="preco" name="preco">
+    <label for="ativo">Ativo:</label>
+    <select name="ativo" id="ativo">
+        <option>Sim</option>
+        <option>Não</option>
+    </select>
     <label for="estoque">Estoque:</label>
     <input class="form-control" type="number" id="estoque" name="estoque">
     <select name="idCategoria" id="idCategoria">

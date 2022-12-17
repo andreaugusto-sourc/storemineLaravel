@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produto extends Model
 {
     use HasFactory;
-    protected $fillable = ["nome","descricao","imagem","preco","estoque","idCategoria"];
+    protected $fillable = ["nome","descricao","imagem","preco","ativo","estoque","idCategoria"];
 
     public static function uploadImagem($request) {
         /* processo de upload de imagem */
