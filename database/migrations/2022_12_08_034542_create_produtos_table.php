@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nome',60);
             $table->text('descricao');
             $table->binary('imagem');
-            $table->integer('preco');
+            $table->decimal('preco',6,2);
             $table->integer('estoque');
             $table->unsignedBigInteger('idCategoria');
             $table->foreign('idCategoria')->references('id')->on('categorias');

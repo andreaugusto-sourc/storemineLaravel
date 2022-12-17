@@ -11,7 +11,7 @@
         <h2 class="display-5">{{$produto->nome}}</h2>
 
         <div class="d-flex flex-column mt-2 mb-4">
-            <h1 class="display-4">R$ {{$produto->preco}} à vista</h1>
+            <h1 class="display-4">R$ {{$produto->preco/100}} à vista</h1>
             <aside class="fs-2">Em até 8X sem juros!</aside>
             <a class="fs-3"><u>Formas de pagamento</u></a>
         </div>
