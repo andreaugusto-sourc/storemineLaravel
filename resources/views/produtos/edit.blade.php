@@ -18,12 +18,20 @@
     <input class="form-control" value="{{$produto->preco}}" type="number" id="preco" name="preco">
     <label for="ativo">Ativo:</label>
     <select name="ativo" id="ativo">
+        @if($produto->ativo == "Sim")
+        <option selected>Sim</option>
+        @else
         <option>Sim</option>
+        @endif
+        @if($produto->ativo == "Não")
+        <option selected>Não</option>
+        @else
         <option>Não</option>
+        @endif
     </select>
     <label for="estoque">Estoque:</label>
     <input class="form-control" value="{{$produto->estoque}}" type="text" id="estoque" name="estoque">
-    <select class="form-select" name="idCategoria" id="idCategoria">
+    <select name="idCategoria" id="idCategoria">
         @foreach ($categorias as $categoria)
             @if ($categoria->id != $produto->idCategoria)
             <option>{{$categoria->id}} - {{$categoria->nome}}</option>
