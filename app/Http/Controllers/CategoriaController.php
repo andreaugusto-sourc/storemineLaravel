@@ -24,7 +24,7 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        return view('categorias.create');
+        return view('admin.categorias.create');
     }
 
     /**
@@ -83,6 +83,5 @@ class CategoriaController extends Controller
     public function destroy($id)
     {
         //
-        Produto::findOrFail($id)->delete();
     }
 }

@@ -41,14 +41,16 @@
                 
             <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="">Carrinho</a></li>
             @guest
-            <li><img src="/images/cadastro.png" class="imagens-link p-2"> <a href="{{route('register')}}">Cadastro</a></li>
+            <li>
+               <img src="/images/cadastro.png" class="imagens-link p-2"> 
+               <a href="{{route('register')}}">Entrar</a>
+            </li>
             @endguest
 
             @auth
             <form action="{{route('logout')}}" method="POST">
                 @csrf
-                <li><img src="/images/cadastro.png" class="imagens-link p-2">
-                <a href="{{route('logout')}}" onclick="event.preventDefault();
+                <li><img src="/images/cadastro.png" class="imagens-link p-2"><a href="{{route('logout')}}" onclick="event.preventDefault();
                 this.closest('form').submit();">Sair</a></li>
               </form>
             @endauth

@@ -18,7 +18,7 @@ class ProdutoController extends Controller
         if(request("busca")){
             $produtos = Produto::where('nome', 'like', '%'.request('busca').'%')->get();
         }
-        return view('produtos.index',['produtos' => $produtos]);
+        return view('admin.produtos.index',compact('produtos'));
         //
     }
 
@@ -30,7 +30,7 @@ class ProdutoController extends Controller
     public function create()
     {
         $categorias = Categoria::all();
-        return view('produtos.create',['categorias' => $categorias]);
+        return view('admin.produtos.create',compact('categorias'));
     }
 
     /**
@@ -57,7 +57,7 @@ class ProdutoController extends Controller
     public function show($id)
     {
         $Produto = Produto::findOrFail($id);
-        return view('produtos.show', [
+        return view('admin.produtos.show', [
             'produto' => $Produto,
             'categoria' => Categoria::findOrFail($Produto->idCategoria),
         ]);
@@ -71,7 +71,7 @@ class ProdutoController extends Controller
      */
     public function edit($id)
     {
-        return view('produtos.edit', [
+        return view('admin.produtos.edit', [
             'produto' => Produto::findOrFail($id),
             'categorias' => Categoria::all(),
         ]);
@@ -113,6 +113,6 @@ class ProdutoController extends Controller
 
     public function dashboard() 
     {
-        return view('produtos.dashboard',['Produtos' => Produto::all()]);
+        return view('admin.produtos.dashboard',['Produtos' => Produto::all()]);
     } 
 }
