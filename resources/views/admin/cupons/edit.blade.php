@@ -4,7 +4,7 @@
 
 @section('content')
 
-<form class="form" action="{{ route('cupons.update', $Produto->id) }}" method="post">
+<form class="form" action="{{ route('cupons.update', $CupomDesconto->id) }}" method="post">
 @csrf
 @method('PUT')
 <h1>Editar Cupom de Desconto</h1>
@@ -19,8 +19,16 @@
 
 <label for="modo_desconto">Modo desconto:</label>
 <select name="modo_desconto" id="modo_desconto">
+    @if($CupomDesconto->modo_desconto == "porc")
+    <option selected>porc</option>
+    @else
     <option>porc</option>
+    @endif
+    @if($CupomDesconto->modo_desconto == "valor")
+    <option selected>valor</option>
+    @else
     <option>valor</option>
+    @endif
 </select>
 
 <label for="limite">Limite:</label>
@@ -28,14 +36,30 @@
 
 <label for="modo_limite">Modo limite:</label>
 <select name="modo_limite" id="modo_limite">
+    @if($CupomDesconto->modo_desconto == "qtd")
+    <option selected>qtd</option>
+    @else
     <option>qtd</option>
+    @endif
+    @if($CupomDesconto->modo_desconto == "valor")
+    <option selected>valor</option>
+    @else
     <option>valor</option>
+    @endif
 </select>
 
 <label for="ativo">Ativo:</label>
 <select name="ativo" id="ativo">
+    @if($CupomDesconto->ativo == "Sim")
+    <option selected>Sim</option>
+    @else
     <option>Sim</option>
+    @endif
+    @if($CupomDesconto->ativo == "Não")
+    <option selected>Não</option>
+    @else
     <option>Não</option>
+    @endif
 </select>
 
 <label for="dthr_validade">Data de validade:</label>
