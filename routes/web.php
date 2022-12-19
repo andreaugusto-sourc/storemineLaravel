@@ -16,11 +16,17 @@ use App\Http\Controllers\CupomDescontoController;
 */
 
 Route::get('/', [ProdutoController::class,'index']);
-Route::get('dashboard',[ProdutoController::class,'dashboard']);
+Route::get('dashboard/categorias',[CategoriaController::class,'dashboard']);
+Route::get('dashboard/produtos',[ProdutoController::class,'dashboard']);
+Route::get('dashboard/cupons',[CupomDescontoController::class,'dashboard']);
 Route::resources([
     'categorias' => CategoriaController::class,
     'produtos' => ProdutoController::class,
     'cupons' => CupomDescontoController::class,
 ]);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
 
 require __DIR__.'/auth.php';

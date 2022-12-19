@@ -1,17 +1,17 @@
 @extends('layouts.main')
 
-@section('title', $produto->nome )
+@section('title', $Produto->nome )
 
 @section('content')
 <div class="d-flex flex-wrap justify-content-center align-items-center mb-4 mt-4">
-    <img src="/images/upload/{{$produto->imagem}}" class="w-50 border border-secondary" alt="{{$produto->nome}}">
+    <img src="/images/upload/{{$Produto->imagem}}" class="w-50 border border-secondary" alt="{{$Produto->nome}}">
     <div class="d-flex flex-column px-5">
-        <p class="fs-1">{{$produto->estoque}} Unidades</p>
+        <p class="fs-1">{{$Produto->estoque}} Unidades</p>
 
-        <h2 class="display-5">{{$produto->nome}}</h2>
+        <h2 class="display-5">{{$Produto->nome}}</h2>
 
         <div class="d-flex flex-column mt-2 mb-4">
-            <h1 class="display-4">R$ {{$produto->preco/100}} à vista</h1>
+            <h1 class="display-4">R$ {{$Produto->preco}} à vista</h1>
             <aside class="fs-2">Em até 8X sem juros!</aside>
             <a class="fs-3"><u>Formas de pagamento</u></a>
         </div>
@@ -23,7 +23,7 @@
             @endfor
         </select>
 
-        @if($categoria->nome == "Roupas")
+        @if($Categoria->nome == "Roupas")
             <label for="tamanho" class="fs-3">Tamanho:</label>
             <select name="tamanho" id="tamanho">
                 <option class="form-select-option">PP</option>

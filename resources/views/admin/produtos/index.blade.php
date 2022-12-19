@@ -12,7 +12,7 @@
             </a>
             <div class="info-mobile">
                 <a class="fs-1 text-dark" href="{{ route('produtos.show', $produto->id) }}"><u>{{$produto->nome}}</u></a>
-                <article class="preco-produto">R$ {{$produto->preco/100}}</article>
+                <article class="preco-produto">R$ {{$produto->preco}}</article>
             </div>
 
         </div>

@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string("localizador")->unique();
             $table->decimal("desconto",6,2)->default(0);
             $table->enum("modo_desconto",["valor","porc"])->default("porc");
-            $table->decimal("limitante",6,2)->default(0);
-            $table->enum("modo_limitante",["valor","qtd"])->default("qtd");
+            $table->decimal("limite",6,2)->default(0);
+            $table->enum("modo_limite",["valor","qtd"])->default("qtd");
             $table->datetime("dthr_validade");
             $table->enum("ativo",["Sim","Não"])->default("Sim");
             $table->timestamps();

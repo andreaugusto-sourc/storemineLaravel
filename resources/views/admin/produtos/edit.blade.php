@@ -4,36 +4,36 @@
 
 @section('content')
 
-<form class="form" action="{{ route('produtos.update', $produto->id) }}" method="post" enctype="multipart/form-data">
+<form class="form" action="{{ route('produtos.update', $Produto->id) }}" method="post" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <h1>Editar Produto</h1>
     <label for="nome">Nome:</label>
-    <input class="form-control" value="{{$produto->nome}}" type="text" id="nome" name="nome">
+    <input class="form-control" value="{{$Produto->nome}}" type="text" id="nome" name="nome">
     <label for="descricao">Descrição:</label>
-    <input class="form-control" value="{{$produto->descricao}}" type="text" id="descricao" name="descricao">
+    <input class="form-control" value="{{$Produto->descricao}}" type="text" id="descricao" name="descricao">
     <label for="imagem">Imagem:</label>
     <input class="form-control" type="file" id="imagem" name="imagem">
     <label for="preco">Preço:</label>
-    <input class="form-control" value="{{$produto->preco}}" type="number" id="preco" name="preco">
+    <input class="form-control" value="{{$Produto->preco}}" type="number" id="preco" name="preco">
     <label for="ativo">Ativo:</label>
     <select name="ativo" id="ativo">
-        @if($produto->ativo == "Sim")
+        @if($Produto->ativo == "Sim")
         <option selected>Sim</option>
         @else
         <option>Sim</option>
         @endif
-        @if($produto->ativo == "Não")
+        @if($Produto->ativo == "Não")
         <option selected>Não</option>
         @else
         <option>Não</option>
         @endif
     </select>
     <label for="estoque">Estoque:</label>
-    <input class="form-control" value="{{$produto->estoque}}" type="text" id="estoque" name="estoque">
+    <input class="form-control" value="{{$Produto->estoque}}" type="text" id="estoque" name="estoque">
     <select name="idCategoria" id="idCategoria">
         @foreach ($categorias as $categoria)
-            @if ($categoria->id != $produto->idCategoria)
+            @if ($categoria->id != $Produto->idCategoria)
             <option>{{$categoria->id}} - {{$categoria->nome}}</option>
             @else
             <option selected>{{$categoria->id}} - {{$categoria->nome}}</option>

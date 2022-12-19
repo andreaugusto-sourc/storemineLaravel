@@ -7,11 +7,6 @@ use App\Models\Categoria;
 use App\Models\Produto;
 class ProdutoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $produtos = Produto::where(['ativo'=>"Sim"])->get();
@@ -19,26 +14,14 @@ class ProdutoController extends Controller
             $produtos = Produto::where('nome', 'like', '%'.request('busca').'%')->get();
         }
         return view('admin.produtos.index',compact('produtos'));
-        //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $categorias = Categoria::all();
         return view('admin.produtos.create',compact('categorias'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request, Produto $Produto)
     {
         $Produto->fill($request->all());
@@ -48,42 +31,23 @@ class ProdutoController extends Controller
         return redirect()->route('produtos.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $Produto = Produto::findOrFail($id);
         return view('admin.produtos.show', [
-            'produto' => $Produto,
-            'categoria' => Categoria::findOrFail($Produto->idCategoria),
+            'Produto' => $Produto,
+            'Categoria' => Categoria::findOrFail($Produto->idCategoria),
         ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         return view('admin.produtos.edit', [
-            'produto' => Produto::findOrFail($id),
+            'Produto' => Produto::findOrFail($id),
             'categorias' => Categoria::all(),
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {   
         $novoProduto = [
@@ -99,12 +63,6 @@ class ProdutoController extends Controller
         return redirect()->route('produtos.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $Produto = Produto::findOrFail($id)->delete();
