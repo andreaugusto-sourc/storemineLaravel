@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\CupomDescontoController;
+use App\Http\Controllers\CarrinhoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,10 +24,14 @@ Route::resources([
     'categorias' => CategoriaController::class,
     'produtos' => ProdutoController::class,
     'cupons' => CupomDescontoController::class,
+    'carrinho' => CarrinhoController::class,
 ]);
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
-
+// rotas do carrinho de compras
+Route::get('carrinho/adicionar', function () {
+    return redirect()->route('produtos.index');
+});
+Route::post('carrinho/adicionar/',[CarrinhoController::class,'adicionar'])->name("carrinho.adicionar");
 require __DIR__.'/auth.php';

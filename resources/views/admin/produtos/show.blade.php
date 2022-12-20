@@ -3,7 +3,7 @@
 @section('title', $Produto->nome )
 
 @section('content')
-<div class="d-flex flex-wrap justify-content-center align-items-center mb-4 mt-4">
+<div class="d-flex flex-wrap justify-content-center align-items-center mb-5 mt-5">
     <img src="/images/upload/{{$Produto->imagem}}" class="w-50 border border-secondary" alt="{{$Produto->nome}}">
     <div class="d-flex flex-column px-5">
         <p class="fs-1">{{$Produto->estoque}} Unidades</p>
@@ -35,8 +35,11 @@
         @endif
  
         <div class="d-grid gap-2">
-            <a class="btn btn-success" href="">Comprar</a>
-            <a class="btn btn-secondary" href="">Adicionar ao carrinho</a>
+            <form action="{{route('carrinho.adicionar')}}" method="post">
+            @csrf
+            <input type="hidden" value="{{$Produto->id}}"name="id">
+            <button type="submit" class="btn btn-success w-100">Comprar</button>
+            </form>
         </div>
 
         <div class="d-flex flex-column mt-4">

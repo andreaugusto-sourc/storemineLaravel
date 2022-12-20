@@ -16,11 +16,11 @@
 
 <header class="d-flex flex-column">
 
-    <div class="navbar d-flex justify-content-around align-items-center fs-3">
+    <div class="navbar d-flex justify-content-evenly align-items-center fs-3">
         
         <img src="/images/logo.png" class="logo">
 
-        <a href="/" class="logo-texto" translate="no"><span>Store</span>Mine</a>
+        <article class="logo-texto" translate="no"><span>Store</span>Mine</article>
 
         <form action="/" method="get">
         <div class="pesquisa d-flex">
@@ -39,7 +39,7 @@
 
             <nav>
                 
-            <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="">Carrinho</a></li>
+            <li><img src="/images/carrinho.png" class="imagens-link p-2"> <a href="/carrinho">Carrinho</a></li>
             @guest
             <li>
                <img src="/images/cadastro.png" class="imagens-link p-2"> 
@@ -70,11 +70,11 @@
 
 </header>
 
-    @yield('content')
+@yield('content')
     
 </div>
 
-<footer class="d-flex align-items-center justify-content-evenly border-top border-dark fs-3 p-4">
+<footer class="d-flex align-items-center justify-content-evenly border-top border-dark fs-3 p-5">
 
 <div class="d-flex flex-column align-items-center">
     <a href="" class="text-dark p-3">Sobre</a>

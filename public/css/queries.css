@@ -37,7 +37,7 @@
     .menu-section.on .menu-toggle {
         position: absolute;
         right: 5%;
-        top: 20%;
+        top: 40%;
     }
     .menu-section.on .menu-toggle .one{
         transform: rotate(45deg) translate(4px, 9px);

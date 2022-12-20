@@ -10,7 +10,7 @@ header a {
     font-size: 3rem;
     color: var(--verde);
 }
-span {
+header span {
     color: var(--marrom);
 }
 #input-pesquisa {
